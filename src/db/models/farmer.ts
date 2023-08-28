@@ -17,6 +17,7 @@ export class FarmerInstance extends Model<
   declare email: string;
 
   declare addField: (fieldId: number) => Promise<void>;
+  declare addClient: (clientId: number) => Promise<void>;
 }
 
 const Farmer = db.define<FarmerInstance>('Farmers', {

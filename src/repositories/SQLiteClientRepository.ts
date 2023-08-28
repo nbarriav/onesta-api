@@ -8,8 +8,10 @@ import { ClientToAdd, Error } from '../types';
 export class SQLITEClientRepository implements ClientRepository {
   async create(client: ClientToAdd): Promise<Client | Error> {
     try {
-      const farmerId = await this.getFarmerId(client.farmerEmail);
-      if (!farmerId) {
+      const farmer = await FarmerModel.findOne({
+        where: { email: client.farmerEmail },
+      });
+      if (!farmer) {
         return { message: 'Farmer not found' };
       }
       const newClientData = {
@@ -17,8 +19,15 @@ export class SQLITEClientRepository implements ClientRepository {
         lastName: client.lastName,
         email: client.email,
       };
-      const newClient = await ClientModel.create(newClientData);
-      await newClient.addFarmer(farmerId);
+      const [newClient, created] = await ClientModel.findOrCreate({
+        where: { email: client.email },
+        defaults: newClientData,
+      });
+      if (!created) {
+        return { message: 'Client already exists' };
+      }
+      await newClient.addFarmer(farmer.id);
+      await farmer.addClient(newClient.id);
       return newClient;
     } catch (err) {
       return this.handleError(err);
