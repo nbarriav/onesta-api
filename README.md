@@ -75,3 +75,7 @@ Para este endpoint es necesario enviar un archivo csv como el que se envío en l
 - Mejora en el orden del código. Hay algunos archivos que tienen código que se repite en otros archivos, por lo que se podría crear un archivo de utilidades para evitar la repetición de código.
 
 - Mejora en acceso concurrente a la base de datos. Se podría implementar un sistema de colas para evitar que se hagan muchas peticiones a la base de datos al mismo tiempo.
+
+- Agregar pruebas unitarias y de integración.
+
+- Agregar archivos de migración para la base de datos.
