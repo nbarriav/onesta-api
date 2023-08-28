@@ -1,0 +1,8 @@
+node_modules/
+
+app.db
+yarn.lock
+yarn-error.log
+uploads/
+
+.DS_Store
