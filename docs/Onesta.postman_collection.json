@@ -1,0 +1,614 @@
+{
+	"info": {
+		"_postman_id": "47e39e52-5234-4dbb-b72b-cfb9bff4ca2e",
+		"name": "Onesta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13491185"
+	},
+	"item": [
+		{
+			"name": "Fruits",
+			"item": [
+				{
+					"name": "Empty request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/fruits",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"fruits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "without name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Fruit\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/fruits",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"fruits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "without variety",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Fruit\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/fruits",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"fruits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "with attributes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Fruit\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/fruits",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"fruits"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Farmer",
+			"item": [
+				{
+					"name": "Empty request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/fruits",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"fruits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "without name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Fruit\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/fruits",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"fruits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "without lastName",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Fruit\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/fruits",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"fruits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "without email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Fruit\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/fruits",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"fruits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "with attributes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n    \"name\": \"Name\",\n    \"lastName\": \"Last Name\",\n    \"email\": \"email@email.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/farmers",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"farmers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Field",
+			"item": [
+				{
+					"name": "empty",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/fields",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"fields"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "without name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"location\": \"Location\",\n    \"farmerEmail\": \"email@email.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/fields",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"fields"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "without location",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Field name\",\n    \"farmerEmail\": \"email@email.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/fields",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"fields"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "without farmerEmail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Field name\",\n    \"location\": \"Field location\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/fields",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"fields"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "with farmerEmail that not exists",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Field name\",\n    \"location\": \"Field location\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/fields",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"fields"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "with attributes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Field name\",\n    \"location\": \"Field location\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/fields",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"fields"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "A farmer must be created to create a field.\n\nbody example:\n\n``` javascript\n<code class=&#x27;preserveHtml&#x27; class=&#x27;preserveHtml&#x27; >{</code>\n  \"name\": \"Field name\",\n  \"location\": \"Field location\",\n  \"farmerEmail\": \"farmer@mail.com\"\n}\n\n ```"
+		},
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "empty request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/clients",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "without name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"lastName\": \"Client last name\",\n    \"email\": \"client@email.com\",\n    \"farmerEmail\": \"email@mail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/clients",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "without last name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"lastName\": \"Client last name\",\n    \"email\": \"client@email.com\",\n    \"farmerEmail\": \"email@mail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/clients",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "without email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"lastName\": \"Client last name\",\n    \"email\": \"client@email.com\",\n    \"farmerEmail\": \"email@mail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/clients",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "without farmer email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"lastName\": \"Client last name\",\n    \"email\": \"client@email.com\",\n    \"farmerEmail\": \"email@mail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/clients",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "with farmerEmail that not exists",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"lastName\": \"Client last name\",\n    \"email\": \"client@email.com\",\n    \"farmerEmail\": \"email@mail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/clients",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "with attributes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"lastName\": \"Client last name\",\n    \"email\": \"client@email.com\",\n    \"farmerEmail\": \"email@mail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/clients",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clients"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "A farmer must be created to create a field.\n\nbody example:\n\n``` javascript\n{\n  \"name\": \"Client name\",\n  \"lastName\": \"Client Last Name\",\n  \"email\": \"client@email.com\",\n  \"farmerEmail\": \"farmer@email.com\"\n}\n\n ```"
+		},
+		{
+			"name": "CSVHarvest",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/harvests",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"harvests"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "El csv a utilizar debe ser como el que fue entregado para realizar la tarea."
+		}
+	]
+}
